@@ -1,0 +1,39 @@
+# CreatorStudioAI Configuration Example
+# Copy to settings.yaml and fill in real values, or use environment variables.
+
+anthropic:
+  api_key: ${ANTHROPIC_API_KEY}
+  model: claude-3-5-sonnet-20241022
+
+elevenlabs:
+  api_key: ${ELEVENLABS_API_KEY}
+  voice_id: your_cloned_voice_id
+
+higgsfield:
+  api_key: ${HIGGSFIELD_API_KEY}
+
+descript:
+  api_key: ${DESCRIPT_API_KEY}
+
+metricool:
+  api_key: ${METRICOOL_API_KEY}
+
+languages:
+  - en
+  - es
+  - pt
+  - fr
+  - de
+  - it
+  - ja
+  - ko
+  - zh
+  - ar
+
+approval:
+  required: true
+  mode: cli  # cli | webhook | auto (for testing)
+
+reporting:
+  timezone: America/Los_Angeles
+  revenue_tracking: true
